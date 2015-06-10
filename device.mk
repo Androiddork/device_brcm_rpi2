@@ -1,6 +1,4 @@
-
-PRODUCT_AAPT_CONFIG := normal tvdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
@@ -24,3 +22,4 @@ PRODUCT_COPY_FILES := \
 DEVICE_PACKAGE_OVERLAYS := device/brcm/rpi2/overlay
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 PRODUCT_LOCALES := en_US,ko_KR,ja_JP,zh_CN
+
